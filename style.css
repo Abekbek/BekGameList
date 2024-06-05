@@ -1,0 +1,342 @@
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:focus,a:visited,a:active{
+  outline: none;
+}
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: midnightblue;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 15px 0;
+}
+
+.nav-logo {
+    width: 45px; /* Adjust the size of the logo as needed */
+    height: auto;
+    position: fixed;
+    top: 0; /* Adjust this value to move the logo slightly up */
+    transform: translateX(-50%);
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 100%;
+    height: 2px;
+    background-color: mediumvioletred;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2px, 1px);
+    transform: rotate(-45deg) translate(-2px, 1px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 40px 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro img {
+    width: 100%;
+    margin-top: 80px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.intro p {
+    text-align: left;
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-right: -10px;
+}
+
+.horizontal-line1 {
+  position: relative;
+  width: 100%;
+  margin-top: 40px; /* Sesuaikan dengan kebutuhan Anda */
+  margin-bottom: 10px;
+  height: 2px; /* Ketebalan garis */
+  background-color: #333; /* Warna garis */
+}
+
+.horizontal-line1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Warna garis */
+}
+
+.horizontal-line2 {
+  position: relative;
+  width: 100%;
+  margin-top: -50px; /* Sesuaikan dengan kebutuhan Anda */
+  margin-bottom: 10px;
+  height: 2px; /* Ketebalan garis */
+  background-color: #333; /* Warna garis */
+}
+
+.horizontal-line2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333; /* Warna garis */
+}
+
+.game-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-list h2 {
+    font-size: 1.5em;
+    margin-bottom: -10px;
+}
+
+.game-info {
+    padding: 20px;
+    flex: 1;
+}
+
+.game-info p {
+    font-size: 1em;
+    color: #666;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    margin-top: -20px;
+}
+
+.info-game {
+    position: relative;
+    margin-left: -5px;
+}
+
+.info-game p {
+    font-size: 1em;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.info-game a {
+    font-size: 0.9em;
+    margin-left: 5px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.info-game p1 {
+    font-size: 0.9em;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.info-game p2 {
+    font-size: 0.9em;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.info-game p3 {
+    font-size: 0.9em;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.info-game p4 {
+    font-size: 0.9em;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+
+.link {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.share {
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.share h2 {
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.social-share {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-share a {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-share a img {
+  width: 100%;
+  height: 100%;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 0px solid #444;
+    margin-top: 100px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.6em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide nav menu on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: midnightblue;
+        width: 100%;
+        border: 1px solid #444;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show nav menu when active */
+        width: 150px;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        left: 10px;
+    }
+
+    .nav-logo {
+        transform: translateX(-50%);
+        right: -10px;
+    }
+}
